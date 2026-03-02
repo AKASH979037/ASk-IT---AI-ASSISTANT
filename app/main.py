@@ -7,4 +7,4 @@ app.include_router(chat_router)
 
 @app.get("/")
 def health():
-    return {"status": "run"}gu
+    return {"status": "running good"}
