@@ -3,7 +3,7 @@
 
 const API_CONFIG = {
   // Change this to your backend API endpoint
-  CHAT_API_ENDPOINT: process.env.REACT_APP_API_URL || 'http://localhost:5000/api/chat',
+  CHAT_API_ENDPOINT: process.env.REACT_APP_API_URL || 'http://localhost:8000/hello',
   
   // API timeout in milliseconds
   TIMEOUT: 30000,

@@ -47,7 +47,7 @@ function Chatbot() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ message: input }),
+        body: JSON.stringify({ question: input }),
       });
 
       if (!response.ok) {
@@ -59,7 +59,7 @@ function Chatbot() {
       // Add bot response to chat
       const botMessage = {
         id: messages.length + 2,
-        text: data.response || 'I apologize, I could not process your request.',
+        text: data.answer || data.message || 'I apologize, I could not process your request.',
         sender: 'bot',
         timestamp: new Date(),
       };
